@@ -1,7 +1,7 @@
 build:
   stage: build
   tags:
-    - arm64
+    - amd64
   image:
     name: registry.mglolenstine.xyz/actions/build-docker-image:latest
   variables:
