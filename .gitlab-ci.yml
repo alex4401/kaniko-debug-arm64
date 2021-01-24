@@ -1,0 +1,10 @@
+build:
+  stage: build
+  tags:
+    - arm64
+  image:
+    name: registry.mglolenstine.xyz/actions/build-docker-image:latest
+  variables:
+    DOCKERFILE: Dockerfile
+    EXTRA_IMAGE_TAGS: arm64-debug
+  script: [ "/snippet" ]
